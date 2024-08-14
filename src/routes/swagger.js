@@ -24,6 +24,9 @@ const options = {
   },
   apis: [ // Array of files to include in the Swagger documentation
     'src/routes/user_route.js',
+    'src/routes/tank_route.js',
+    'src/routes/sensor_route.js',
+    'src/routes/bomb_route.js',
     'config/config.json',
   ]
 }

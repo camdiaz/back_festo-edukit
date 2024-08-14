@@ -3,6 +3,8 @@ const cors = require('cors');
 const dotenv = require('dotenv');
 const userRoutes = require('./routes/user_route');
 const tankRoutes = require('./routes/tank_route');
+const sensorRoutes = require('./routes/sensor_route');
+const bombRoutes = require('./routes/bomb_route');
 const { swaggerDocs: SwaggerDocsV1 } = require('./routes/swagger');
 
 dotenv.config();
@@ -15,6 +17,9 @@ SwaggerDocsV1(app, PORT);
 app.use(cors());
 app.use(express.json());
 app.use(userRoutes);
+app.use(tankRoutes);
+app.use(sensorRoutes);
+app.use(bombRoutes);
 
 app.get('/', (req, res) => res.status(200).send({
   message: 'FESTO EDUKIT API',

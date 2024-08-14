@@ -3,7 +3,7 @@ const {
   Model,
 } = require('sequelize');
 module.exports = (sequelize, DataTypes) => {
-  class Tank extends Model {
+  class Sensor extends Model {
     /**
      * Helper method for defining associations.
      * This method is not a part of Sequelize lifecycle.
@@ -13,13 +13,16 @@ module.exports = (sequelize, DataTypes) => {
       // define association here
     }
   }
-  Tank.init({
-    tank_name: DataTypes.STRING,
-    capacity:DataTypes.FLOAT,
-    level: DataTypes.FLOAT
+  Sensor.init({
+    sensor_name: DataTypes.STRING,
+    level: DataTypes.FLOAT,
+    unity: DataTypes.STRING,
+    type: DataTypes.STRING,
+    min: DataTypes.FLOAT,
+    max: DataTypes.FLOAT,
   }, {
     sequelize,
-    modelName: 'Tank',
+    modelName: 'Sensor',
   });
-  return Tank;
+  return Sensor;
 };

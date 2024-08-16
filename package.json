@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon ./src/index.js",
+    "dev": "node ./src/index.js",
     "build": "echo 'Build script is not defined yet.'",
-    "prod": "nodemon ./src/index.js",
+    "prod": "node ./src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [

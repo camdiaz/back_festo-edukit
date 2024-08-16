@@ -29,7 +29,7 @@ const router = express.Router();
 
 /**
  * @openapi
- * /api/create:
+ * /user/create:
  *   post:
  *     tags:
  *       - Users

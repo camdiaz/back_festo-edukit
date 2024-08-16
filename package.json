@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "nodemon ./src/index.js",
-    "build": "npm run build:swagger && npm run build:docs",
+    "build": "echo 'Build script is not defined yet.'",
     "prod": "nodemon ./src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
